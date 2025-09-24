@@ -1,0 +1,80 @@
+.icon_points, .tutoring {
+    margin-bottom: 40px;
+    text-decoration: none;
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        text-decoration: none;
+        line-height: 36px;
+        color: #111827;
+        margin-bottom: 8px;
+    }
+    p {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #4B5563;
+        margin-bottom: 0 !important;
+    }
+    .single-item {
+        align-items: flex-start;
+        text-decoration: none;
+        &-link {
+            transition: .4s ease;
+            transform: translateX(0);
+            &:hover {
+                transform: translateX(20px);
+            }
+        }
+        gap: 16px;
+        img {
+            height: 48px;
+            width: 48px;
+        }
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about {
+    .row {
+        gap: 80px;
+        align-items: center;
+        .col-image {
+            max-width: 674px;
+            width: 100%;
+            img {
+                width: 100%;
+                object-fit: contain;
+                border-radius: 8px;
+            }
+        }
+        .col-context {
+            max-width: 700px;
+            width: 100%;
+            .sec-desc {
+                width: 281px;
+                height: 47px;
+                margin-bottom: 16px;
+                display: block;
+            }
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.4;
+                margin-bottom: 40px;
+                color: #333333;
+            }
+            .tutoring {
+                padding: 24px;
+                border: 1px solid #FCE7F3;
+                border-radius: 8px;
+            }
+        }
+    }
+}

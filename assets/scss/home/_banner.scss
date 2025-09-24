@@ -1,0 +1,67 @@
+.banner {
+    // background: linear-gradient(90deg, #FDF2F8 0%, #FFFFFF 100%);
+    background-color: #FDF2F8;
+    .row {
+        gap: 40px;
+    }
+    .col-image {
+        max-width: 825px;
+        padding-left: 80px !important;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 20px;
+            width: 289px;
+            height: 83px;
+            bottom: 130px;
+            background-image: url("/wp-content/uploads/2025/09/exp.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    &_image {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 40px;
+        transform: rotate(3deg);
+        background-color: #fff;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 109px;
+            height: 109px;
+            background-image: url("/wp-content/uploads/2025/09/flask.svg");
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    .col-context {
+        max-width: 540px;
+        width: 100%;
+        h1 {
+            font-size: 64px;
+            font-weight: bold;
+            strong {
+                color: $primary;
+            }
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 33px;
+            color: #4b5563;
+            margin-bottom: 32px;
+        }
+    }
+}

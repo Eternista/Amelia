@@ -1,0 +1,29 @@
+/*!
+Theme Name: ARZ dla - Amelia
+Theme URI:
+Author: Rafał Ziółkowski & Adrian Ziółkowski
+Author URI: https://rafal-ziolkowski-portfolio.netlify.app
+Description: Wordpress theme
+Version: 1.0.0
+Requires PHP: ^8.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: Amelia
+*/
+
+// EXTRAS
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// MAIN.SCSS
+
+@import "./others/mixins";
+@import "./others/base";
+@import "./others/btn";
+
+@import "./partials/footer";
+@import "./partials/header";
+
+@import "./home/banner";
+@import "./home/about";
+@import "./home/contact";
