@@ -153,6 +153,7 @@ remove_action('wp_head', 'shortlink_wp_head'); // Shortlink for posts
         [],
         '1.0.0' // Możesz tu dać wersję lub filemtime() do debugowania
     );
+	wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true);
     wp_enqueue_style(
         'arz-theme-tailwind',
         get_template_directory_uri() . '/src/input.css',
